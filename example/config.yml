@@ -17,4 +17,4 @@ metrics:
           error_message: '{{.message}}'
 server:
     host: localhost
-    port: 9144
+    port: 2075
