@@ -2,10 +2,10 @@ global:
     config_version: 2
 input:
     type: file
-    path: ./example/exim-rejected-RCPT-examples.log
+    path: ./grok_exporter-0.2.5.linux-amd64/example/exim-rejected-RCPT-examples.log
     readall: true # Read from the beginning of the file? False means we start at the end of the file and read only new lines.
 grok:
-    patterns_dir: ./logstash-patterns-core/patterns
+    patterns_dir: ./grok_exporter-0.2.5.linux-amd64/patterns
     additional_patterns:
     - 'EXIM_MESSAGE [a-zA-Z ]*'
 metrics:
